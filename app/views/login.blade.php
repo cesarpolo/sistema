@@ -4,9 +4,7 @@
         <meta charset="utf-8">
         <title>Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {{HTML::style('/../public/assets/theme/css/bootstrap.min.css')}}
-        {{HTML::style('/../public/assets/theme/css/plugins/metisMenu/metisMenu.min.css')}}
-        {{HTML::style('/../public/assets/theme/css/sb-admin2.css')}}
+        {{HTML::style('/../public/assets/bootstrap/css/bootstrap.min.css')}}
     </head>
     <body>
         {{-- Preguntamos si hay algún mensaje de error y si hay lo mostramos  --}}

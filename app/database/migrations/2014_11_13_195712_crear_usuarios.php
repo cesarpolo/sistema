@@ -18,6 +18,7 @@ class CrearUsuarios extends Migration {
 			$table->string('name',60);
 			$table->string('email', 60)->unique();
             $table->string('password');
+            $table->integer('active');
             $table->rememberToken();
 			$table->timestamps();
 		});

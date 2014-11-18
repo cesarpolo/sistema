@@ -19,8 +19,10 @@ Route::get('/', function()
 Route::get('login', 'AuthController@showLogin');
 Route::post('login', 'AuthController@postLogin');
 Route::get('logout', 'AuthController@logOut');
-
+Route::get('recovery', 'RemindersController@getRemind');
+Route::post('recovery', 'RemindersController@postRemind');
 Route::get('home', array('before' => 'auth', function()
 {
     return View::make('home');
 }));
+

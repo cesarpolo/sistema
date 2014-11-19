@@ -39,6 +39,8 @@
 		<h1>Representante: {{ Auth::user()->name; }}</h1>
 		<p>ID Usuario is: {{ Auth::user()->id }}</p>
 		{{ HTML::link('logout', 'Cerrar Sesión'); }}
+		<br>
+		{{ HTML::link('profile','Perfil') }}
 	</div>
 </body>
 </html>

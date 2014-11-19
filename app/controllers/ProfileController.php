@@ -9,7 +9,7 @@ class ProfileController extends \BaseController {
 	 */
 	public function index()
 	{
-		return 'Perfil de Usuario'
+		Return View:: make ('profile');
 	}
 
 

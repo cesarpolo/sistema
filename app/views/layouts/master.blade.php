@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>
-            @section('title')
-                titulo
-            @show
+           Colegio Los Arcos
         </title>
     </head>
+    <h1> 
+        @section('title')
+            titulo
+        @show
+    </h1>
     <body>
         @yield('content')
     </body>

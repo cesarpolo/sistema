@@ -13,16 +13,34 @@
 
 Route::get('/', function()
 {
-	Return View:: make ('login');
+	if (Auth::check())
+	{
+		Return View:: make ('parent');
+	}
+	else
+	{
+		Return View:: make ('login');
+	}
 });
 
 Route::get('login', 'AuthController@showLogin');
 Route::post('login', 'AuthController@postLogin');
 Route::get('logout', 'AuthController@logOut');
+
 Route::get('recovery', 'RemindersController@getRemind');
 Route::post('recovery', 'RemindersController@postRemind');
-Route::get('parent', array('before' => 'auth', function()
+
+
+Route::group(array('before' => 'auth'), function()
 {
-    return View::make('parent');
-}));
+    Route::get('parent', function()
+	{
+		Return View:: make ('parent');
+	});
+	Route::get('profile', 'ProfileController@index');
+});
+
+
+
+
 

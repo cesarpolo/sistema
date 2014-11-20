@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'sistema',
 			'username'  => 'root',
-			'password'  => 'Chery2012',
+			'password'  => 'Nel23638776',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

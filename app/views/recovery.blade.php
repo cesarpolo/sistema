@@ -29,10 +29,10 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active" data-toggle="modal" data-target="#myModal"><a href="#myModal">Iniciar Sesión</a></li>
+          <li class="active" data-toggle="modal" data-target="#signin"><a href="#signin">Iniciar Sesión</a></li>
           
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -108,7 +108,7 @@
       
       <script>
         $('#closemodal').click(function() {
-        $('#myModal').modal('hide');
+        $('#signin').modal('hide');
 });
       </script>
 

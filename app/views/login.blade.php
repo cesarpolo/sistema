@@ -68,11 +68,13 @@
         </ul>
         <h3 class="text-muted"><img src="assets/images/escudo.png"> Colegio Los Arcos</h3>
       </div>
-        <h3 class="sign-error">
+       <div class="message">
+         <h3>
             @if(Session::has('mensaje_error'))
                 {{ Session::get('mensaje_error') }}
             @endif 
         </h3>
+       </div>      
 
         <div class="footer">
         <p><span><i class="fa fa-copyright"></i></span> 2014</p>

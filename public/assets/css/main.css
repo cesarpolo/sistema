@@ -26,6 +26,16 @@ body {
   color: #000000;
 }
 
+.message h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #AAA;
+  text-align: center;
+}
+
 .forgot {
   margin: 60px;
     
